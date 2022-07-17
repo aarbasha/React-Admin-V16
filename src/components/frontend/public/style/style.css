@@ -1,0 +1,12 @@
+.spical-spinner .spinner-border {
+  margin: 250px auto;
+  width: 100px !important;
+  height: 100px !important;
+}
+.spical-spinner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

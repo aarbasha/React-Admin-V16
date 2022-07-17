@@ -1,0 +1,80 @@
+.btn-outline-primary:focus .active:focus {
+  color: none;
+  background-color: none;
+  border-color: none;
+  border: none;
+  outline: none;
+}
+
+#toogle{
+  background-color: none !important;
+  border: none !important;
+  outline: none !important;
+  transition: 1.2s all;
+}
+
+#toogle .navbar-toggler-icon{
+  transition: 1.2s all;
+ color: rgb(0, 238, 255) !important;
+  background-color: none !important;
+}
+#toogle .navbar-toggler-icon:hover{
+  transition: 1.2s all;
+}
+
+.navbar-user {
+  position: fixed;
+  top: 0px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(22, 68, 85, 1) 49%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.navbar-user .dropdown-menu {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(22, 68, 85, 1) 49%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  transition: all 0.5s;
+  width: 300px;
+}
+.navbar-user .dropdown-menu .dropdown-item {
+  color: rgb(255, 255, 255);
+}
+.navbar-user .dropdown-menu .dropdown-item:hover {
+  background-color: blue;
+  transition: all 0.5s;
+}
+
+.navbar-user .nav-item .nav-link {
+  color: white;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.navbar-user .nav-item .nav-link:hover {
+  transition: all 0.5s;
+}
+
+.navbar-nav .nav-item .active {
+  color: rgb(0, 200, 255);
+  border-bottom: 1px solid rgb(0, 200, 255);
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+#fullscreenToogle:hover {
+  transition: 1.2s all;
+  transform: rotateY(180deg);
+}
+.bi-search:hover{
+  transition: 1.2s all;
+  transform: rotate(360deg);
+}

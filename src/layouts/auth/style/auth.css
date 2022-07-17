@@ -1,0 +1,28 @@
+
+.singupCard {
+    position: relative !important;
+    top: -25px;
+    max-height: 100px!important;
+}
+ .loginCard {
+    position: relative !important;
+    top: -10px;
+    max-height: 100px!important;
+}
+.forgetPassword{
+    position: relative !important;
+    top: 250px;
+    max-height: 100px!important;
+}
+
+.ResetPassword{
+    position: relative !important;
+    top: 150px;
+    max-height: 100px!important;
+}
+
+.loding{
+    position: absolute;
+    right: 10px !important;
+    top: 0px;
+}
