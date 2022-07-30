@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Outlet } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router-dom"
 // import BackToTopAdmin from './BackToTopAdmin'
 import ThemisAdmin from './Extensions/ThemisAdmin'
 
@@ -15,6 +15,8 @@ import Logo from "../../images/brand-logo-2.png"
 const MasterAdmin = () => {
   const [isActive, setIsActive] = useState(false);
 
+
+
   const handleClick = event => {
     // 👇️ toggle isActive state on click
     setIsActive(current => !current);
@@ -27,6 +29,8 @@ const MasterAdmin = () => {
       <div className={isActive ? 'wrapper toggled' : 'wrapper'}>
         {/*start top header*/}
         <header className="top-header">
+
+
           <nav className="navbar navbar-expand">
 
             <div className="mobile-toggle-icon d-xl-none" onClick={handleClick}>
@@ -41,7 +45,11 @@ const MasterAdmin = () => {
 
             <NavbarList />
           </nav>
+
         </header>
+
+
+
         {/*end top header*/}
         {/*start sidebar */}
         <aside className="sidebar-wrapper">

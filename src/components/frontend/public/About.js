@@ -1,15 +1,17 @@
 import React from 'react'
-
+import GlobalAnimation from '../../../Animation/GlobalAnimation'
 const About = () => {
 
   return (
-    <div className="wrapper">
-      <main className="">
+    <GlobalAnimation >
+      <div className="wrapper">
+        <main className="">
 
-        <h1>About</h1>
+          <h1>About</h1>
 
-      </main>
-    </div>
+        </main>
+      </div>
+    </GlobalAnimation>
   )
 }
 

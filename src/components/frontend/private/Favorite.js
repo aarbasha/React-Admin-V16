@@ -1,15 +1,17 @@
 import React from 'react'
-
+import GlobalAnimation from "../../../Animation/GlobalAnimation"
 const Favorite = () => {
   return (
 
-    <div className="wrapper">
-      <main className="">
+    <GlobalAnimation >
+      <div className="wrapper">
+        <main className="">
 
-        <h1>Favorite</h1>
+          <h1>xxxxxxxxxxxxx</h1>
 
-      </main>
-    </div>
+        </main>
+      </div>
+    </GlobalAnimation>
 
   )
 }

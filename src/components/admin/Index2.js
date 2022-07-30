@@ -1,13 +1,8 @@
-import React  from 'react'
-import { motion } from 'framer-motion'
+import React from 'react'
+import GlobalAnimation from '../../Animation/GlobalAnimation'
 const Index2 = () => {
-
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1 } }}
-            exit={{ opacity: 0 }}
-        >
+        <GlobalAnimation>
             <div>
                 <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-4">
                     <div className="col">
@@ -730,7 +725,7 @@ const Index2 = () => {
                 </div>{/*end row*/}
             </div>
 
-        </motion.div>
+        </GlobalAnimation>
     )
 }
 

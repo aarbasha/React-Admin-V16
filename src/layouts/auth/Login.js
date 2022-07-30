@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import { setError, setLoding } from "./validation/ValidationLogin"
 import "./style/auth.css"
 const Login = () => {
 
-  const Rediract = useNavigate();
-
-
+  // const Rediract = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location.pathname);
   const handelLogin = () => {
     setLoding()
 
@@ -16,15 +17,14 @@ const Login = () => {
 
       if (name === "x") {
         localStorage.setItem("auth", "Anas")
-        Rediract("/");
-      } else {
+        navigate(location.pathname)
+      }
+      else {
         setError();
-        Rediract("/login");
+        navigate("/login");
       }
     }, 3000)
   };
-
-
 
   return (
     <>

@@ -1,23 +1,19 @@
-import React, { useEffect } from "react"
+import React from "react"
 import RouterIndex from "./Routers/RouterIndex";
-
+import { Provider } from 'react-redux'
+import { store } from "./Redux/Store";
 const App = () => {
 
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth"
-  //   })
-  // })
-
-  
 
   return (
-    <div className="App">
+    <Provider store={store}>
 
-      <RouterIndex />
+      <div className="App">
+        <RouterIndex />
+      </div>
 
-    </div>
+
+    </Provider>
   );
 }
 

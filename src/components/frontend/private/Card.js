@@ -1,7 +1,10 @@
 import React from "react";
-
+import GlobalAnimation from "../../../Animation/GlobalAnimation"
 const Card = () => {
   return (
+    <GlobalAnimation >
+
+
     <div className="wrapper">
     <main className="">
 
@@ -9,6 +12,7 @@ const Card = () => {
 
     </main>
   </div>
+  </GlobalAnimation>
   );
 };
 

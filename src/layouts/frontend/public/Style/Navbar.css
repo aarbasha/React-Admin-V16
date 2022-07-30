@@ -71,8 +71,8 @@
 }
 
 #fullscreenToogle:hover {
-  transition: 1.2s all;
-  transform: rotateY(180deg);
+  /* transition: 1.2s all;
+  transform: rotateY(180deg); */
 }
 .bi-search:hover{
   transition: 1.2s all;

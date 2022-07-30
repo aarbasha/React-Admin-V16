@@ -1,12 +1,13 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom"
+import GlobalAnimation from "../../Animation/GlobalAnimation"
 
 // import "../../layouts/frontend/Style/Frontend.css"
 const Error_404 = () => {
 
     const rediract = useNavigate()
     return (
-        <>
+        <GlobalAnimation>
             <div className='authentication-content'>
                 {/*end breadcrumb*/}
                 <div className="error-404 d-flex mt-5 align-items-center justify-content-center">
@@ -38,7 +39,7 @@ const Error_404 = () => {
             </div>
 
 
-        </>
+        </GlobalAnimation>
     )
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import "./style/style.css"
+import GlobalAnimation from '../../../Animation/GlobalAnimation'
 
 const Home = () => {
 
@@ -34,6 +35,7 @@ const Home = () => {
 
 
   return (
+    <GlobalAnimation>
     <div className="wrapper home">
       <main className="">
 
@@ -75,6 +77,8 @@ const Home = () => {
 
       </main>
     </div>
+    </GlobalAnimation>
+
   )
 }
 

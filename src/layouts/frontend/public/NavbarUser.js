@@ -10,12 +10,12 @@ import FullScreenBtn from '../../admin/Extensions/FullScreenBtn';
 
 const NavbarUser = () => {
 
-const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
-  const handleClick = event => {
-    // 👇️ toggle isActive state on click
-    setIsActive(current => !current);
-  };
+    const handleClick = event => {
+        // 👇️ toggle isActive state on click
+        setIsActive(current => !current);
+    };
 
     const Rediract = useNavigate()
     const Logout = () => {
@@ -64,13 +64,13 @@ const [isActive, setIsActive] = useState(false);
                                     <ul className="dropdown-menu">
                                         <li>
                                             <Link className="dropdown-item" to="/user/card">
-                                                Action
+                                                card
                                             </Link>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item" href="#">
-                                                Another action
-                                            </a>
+                                            <Link className="dropdown-item" to="/user/favorite">
+                                                favorite
+                                            </Link>
                                         </li>
 
                                         <li>
