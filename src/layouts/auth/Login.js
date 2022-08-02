@@ -13,15 +13,20 @@ const Login = () => {
     setLoding()
 
     setTimeout(() => {
-      const name = "x"
+      const name = "y"
 
-      if (name === "x") {
+      if (location.pathname !== "/login" && name === "x") {
         localStorage.setItem("auth", "Anas")
         navigate(location.pathname)
       }
+      else if (location.pathname === "/login" && name === "x") {
+        localStorage.setItem("auth", "Anas")
+        navigate('/')
+      }
       else {
         setError();
-        navigate("/login");
+        navigate(location.pathname)
+        // navigate("/login");
       }
     }, 3000)
   };
